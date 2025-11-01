@@ -62,8 +62,11 @@ Request Body
      - string
      - Your internal order ID
 
-.. note::
-   Your **wallet address** and **default webhook URL** are configured in your merchant account by the Pixcorn admin. You don't need to provide them in each API request.
+.. important::
+   Your **wallet address** and **webhook URL** must be configured in your merchant account by the Pixcorn admin before you can create payments. These are used automatically for all payments.
+   
+   - **Wallet address**: Required - Your USDC Polygon address to receive payouts
+   - **Webhook URL**: Required - Your endpoint to receive payment notifications
 
 Example Request
 ---------------
