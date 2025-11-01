@@ -57,10 +57,13 @@ Request Body
      - Customer email address
    * - ``webhook_url``
      - string
-     - Custom webhook URL (overrides merchant default)
+     - Custom webhook URL (overrides your account default webhook URL)
    * - ``order_id``
      - string
      - Your internal order ID
+
+.. note::
+   Your **wallet address** and **default webhook URL** are configured in your merchant account by the Pixcorn admin. You don't need to provide them in each API request.
 
 Example Request
 ---------------
