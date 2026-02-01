@@ -4,7 +4,7 @@ Payment API
 Overview
 --------
 
-The Pixcorn Payment API allows you to create crypto payment links for your customers. Payments are processed via USDC on Polygon network through PayGate.to.
+The Pixcorn Payment API allows you to create crypto payment links for your customers. Payments are processed via USDC on Polygon network through pixcorn.com.
 
 **Base URL**: ``https://pixcorn.com``
 
@@ -90,7 +90,7 @@ Example Response
 
    {
      "success": true,
-     "payment_url": "https://checkout.paygate.to/pay.php?address=...",
+     "payment_url": "https://checkout.pixcorn.com/pay.php?address=...",
      "payment_id": "f4a26a32-4300-417d-b8ae-dcfb8996d7d7",
      "message": "Payment created! Redirect your customer to payment_url",
      "details": {
@@ -103,7 +103,7 @@ Example Response
 Payment URL
 -----------
 
-The ``payment_url`` in the response is the PayGate.to checkout page URL. You must redirect your customer to this URL:
+The ``payment_url`` in the response is the pixcorn.com checkout page URL. You must redirect your customer to this URL:
 
 .. code-block:: javascript
 
@@ -113,7 +113,7 @@ The ``payment_url`` in the response is the PayGate.to checkout page URL. You mus
    // Or open in new tab
    window.open(response.payment_url, '_blank');
 
-**Important**: Never embed the payment URL in an iframe. Customers must be redirected to the PayGate.to domain directly.
+**Important**: Never embed the payment URL in an iframe. Customers must be redirected to the pixcorn.com domain directly.
 
 Checking Payment Status
 -----------------------
